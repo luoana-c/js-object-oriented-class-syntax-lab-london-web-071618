@@ -6,27 +6,24 @@ class BoardMember {
   }
   
   veto() {
-    console.log("No, I must disagree")
+    return "No, I must disagree"
   }
   approve() {
-    console.log("You can do that!")
+    return "You can do that!"
   }
   doCharity() {
-    console.log("I like to help people.")
+    return "I like to help people."
   }
   releasePressStatement() {
-    console.log("You will see great things from Scuber.")
+    return "You will see great things from Scuber."
   }
   sayHi() {
-    console.log(`Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`)
+    return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
   }
 }
 
 class Ceo extends BoardMember {
-  constructor(name, training, homeState) {
-    super.constructor(name, training, homeState)
-  }
   hireEmployee() {
-    console.log("Welcome aboard!")
+    return "Welcome aboard!"
   }
 }
